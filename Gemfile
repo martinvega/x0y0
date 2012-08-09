@@ -17,7 +17,7 @@ gem 'capistrano'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-  gem 'therubyracer', require: false
+  gem 'therubyracer', :require => false
   gem 'uglifier'
 end
 
@@ -26,9 +26,9 @@ group :development do
 end
 
 group :test do
-  gem 'turn', require: false
-  gem 'minitest', require: false
-  gem 'capybara', require: false
+  gem 'turn', :require => false
+  gem 'minitest', :require => false
+  gem 'capybara', :require => false
   gem 'database_cleaner' # For Capybara
   gem 'fabrication'
   gem 'faker'

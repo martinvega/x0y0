@@ -55,11 +55,11 @@ module X0Y0
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
+
     # Fabrication configuration
     config.generators do |g|
-      g.test_framework :test_unit, fixture_replacement: :fabrication
-      g.fixture_replacement :fabrication, dir: 'test/fabricators'
+      g.test_framework :test_unit, :fixture_replacement => :fabrication
+      g.fixture_replacement :fabrication, :dir => 'test/fabricators'
     end
   end
 end
